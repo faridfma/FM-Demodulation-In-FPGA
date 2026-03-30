@@ -1,0 +1,7 @@
+Running: xsim.dir/FM_Radio_S7_TL_behav/xsimk.exe -simmode gui -wdb FM_Radio_S7_TL_behav.wdb -simrunnum 0 -socket 62803
+Design successfully loaded
+Design Loading Memory Usage: 18952 KB (Peak: 18952 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 20988 KB (Peak: 20988 KB)
+Simulation CPU Usage: 187 ms

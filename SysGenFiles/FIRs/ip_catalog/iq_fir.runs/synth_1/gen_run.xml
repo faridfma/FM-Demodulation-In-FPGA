@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-2" LaunchTime="1774509932">
+  <File Type="PA-TCL" Name="iq_fir_bd_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="iq_fir_bd_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="iq_fir_bd_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="iq_fir_bd_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="iq_fir_bd_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="iq_fir_bd_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="iq_fir_bd_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="iq_fir_bd_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="iq_fir_bd_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/iq_fir_bd/iq_fir_bd.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/iq_fir_bd_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/iq_fir_bd/hdl/iq_fir_bd_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1774509923"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/iq_fir_0/iq_fir_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sysgen/iq_fir_mod.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/iq_fir_mod.vhd"/>
+        <Attr Name="ImportTime" Val="1774509921"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="iq_fir_bd_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/sysgen/iq_fir_clock.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/iq_fir_clock.xdc"/>
+        <Attr Name="ImportTime" Val="1774509907"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/sysgen/iq_fir.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/iq_fir.xdc"/>
+        <Attr Name="ImportTime" Val="1774509907"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design">
+      <Option Id="MoreOptsStr"><![CDATA[-mode out_of_context]]></Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="iq_fir_bd_iq_fir_1_0"/>
+</GenRun>

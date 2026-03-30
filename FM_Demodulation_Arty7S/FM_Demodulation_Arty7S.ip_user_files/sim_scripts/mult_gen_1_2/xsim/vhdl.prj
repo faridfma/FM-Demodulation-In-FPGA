@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_1_2/sim/mult_gen_1.vhd" \
+
+nosort

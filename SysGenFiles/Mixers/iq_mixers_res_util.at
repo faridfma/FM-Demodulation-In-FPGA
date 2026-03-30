@@ -1,0 +1,117 @@
+# Vivado resource utilization data is represented in anytable format
+# The data will be consumed by Resource Utilization flow in SysGen.
+
+{
+   'Design_Information' => [
+     { 
+        'PART' => 'xc7s50csga324-2',
+        'Vivado_Stage' => 'Post Synthesis',
+        'Top_Module' => 'iq_mixers',
+        'HDL_Language' => 'vhdl',
+        'Netlist_Crossprobe_File' => 'iq_mixers.vhd.at',
+     },
+   ],
+   'Device_Resources' => [
+     { 
+        'BRAMs' => '75',
+        'DSPs' => '120',
+        'Registers' => '65200',
+        'LUTs' => '32600',
+     },
+   ],
+   'Resource_Utilization_Data' => [
+     {
+          'File_Name' => 'iq_mixers.vhd',
+          'Line_Num' => 'Line_31',
+          'Hier_Name' => 'iq_mixers_bd_wrapper.iq_mixers_bd_i.iq_mixers_1.U0.iq_mixers_struct.dds_compiler_6_0',
+          'Cell_Name' => 'iq_mixers_bd_i/iq_mixers_1/U0/iq_mixers_struct/dds_compiler_6_0',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 33,
+                    'LUT1' => 12,
+                    'CARRY4' => 7,
+                    'RAMB18E1' => 1,
+                    'LUT2' => 1,
+                    'LUT3' => 2,
+                    'Total_Registers' => 33,
+                    'Total_LUTs' => 15,
+                    'Total_BRAMs' => 0.5,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iq_mixers.vhd',
+          'Line_Num' => 'Line_38',
+          'Hier_Name' => 'iq_mixers_bd_wrapper.iq_mixers_bd_i.iq_mixers_1.U0.iq_mixers_struct.dds_compiler_6_0_1',
+          'Cell_Name' => 'iq_mixers_bd_i/iq_mixers_1/U0/iq_mixers_struct/dds_compiler_6_0_1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 33,
+                    'LUT1' => 12,
+                    'CARRY4' => 7,
+                    'RAMB18E1' => 1,
+                    'LUT2' => 1,
+                    'LUT3' => 2,
+                    'Total_Registers' => 33,
+                    'Total_LUTs' => 15,
+                    'Total_BRAMs' => 0.5,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iq_mixers.vhd',
+          'Line_Num' => 'Line_45',
+          'Hier_Name' => 'iq_mixers_bd_wrapper.iq_mixers_bd_i.iq_mixers_1.U0.iq_mixers_struct.mult1',
+          'Cell_Name' => 'iq_mixers_bd_i/iq_mixers_1/U0/iq_mixers_struct/mult1',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 2,
+                    'FDRE' => 16,
+                    'LUT3' => 14,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iq_mixers.vhd',
+          'Line_Num' => 'Line_82',
+          'Hier_Name' => 'iq_mixers_bd_wrapper.iq_mixers_bd_i.iq_mixers_1.U0.iq_mixers_struct.mult2',
+          'Cell_Name' => 'iq_mixers_bd_i/iq_mixers_1/U0/iq_mixers_struct/mult2',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 1,
+                    'LUT2' => 2,
+                    'FDRE' => 16,
+                    'LUT3' => 14,
+                    'Total_DSPs' => 1,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     { 
+          'File_Name' => 'iq_mixers.vhd',
+          'Line_Num' => 'Line_000',
+          'Hier_Name' => 'iq_mixers',
+          'Cell_Name' => 'iq_mixers',
+          'Primitives' => [ 
+               { 
+                    'FDRE' => 98,
+                    'LUT1' => 24,
+                    'CARRY4' => 14,
+                    'RAMB18E1' => 2,
+                    'LUT2' => 6,
+                    'LUT3' => 32,
+                    'DSP48E1' => 2,
+                    'Total_Registers' => 98,
+                    'Total_LUTs' => 62,
+                    'Total_BRAMs' => 1.0,
+                    'Total_DSPs' => 2,
+               },
+          ],
+     },
+   ],
+} 

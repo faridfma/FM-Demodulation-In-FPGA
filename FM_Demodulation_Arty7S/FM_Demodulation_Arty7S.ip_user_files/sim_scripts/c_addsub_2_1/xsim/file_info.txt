@@ -1,0 +1,2 @@
+c_addsub_2.vhd,vhdl,xil_defaultlib,../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_2_1/sim/c_addsub_2.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

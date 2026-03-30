@@ -1,0 +1,65 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use std.textio.all;
+use ieee.std_logic_textio.all;
+
+entity tb_FM_Signal is
+end entity;
+
+architecture sim of tb_FM_Signal is
+
+    -- Clock period
+    constant clk_period : time := 5 ns; -- 200 MHz
+
+    -- Signals
+    signal clk           : std_logic := '0';
+    signal FM_SgnalTest  : std_logic_vector(31 downto 0);
+
+    -- DDS valid signal for testbench
+    signal m_axis_data_tvalid_Sig : std_logic;
+
+begin
+
+    -- Clock generation
+    clk_process : process
+    begin
+        while true loop
+            clk <= '0';
+            wait for clk_period/2;
+            clk <= '1';
+            wait for clk_period/2;
+        end loop;
+    end process;
+
+    -- Instantiate your FM signal generator
+    UUT: entity work.FM_Signal_Test
+    port map (
+        clk => clk,
+        FM_SgnalTest => FM_SgnalTest
+    );
+
+    ----------------------------------------------------------------
+    -- Capture FM signal to a text file
+    ----------------------------------------------------------------
+    capture_process : process(clk)
+        file fm_file : text open write_mode is "fm_samples.txt";
+        variable L : line;
+    begin
+        if rising_edge(clk) then
+            -- Assume your DDS output is always valid in simulation
+            write(L, integer(signed(FM_SgnalTest)));
+            writeline(fm_file, L);
+        end if;
+    end process;
+
+    ----------------------------------------------------------------
+    -- Stop simulation after a certain time
+    ----------------------------------------------------------------
+    stop_process : process
+    begin
+        wait for 100 us; -- adjust as needed for number of samples
+        assert false report "Simulation finished" severity failure;
+    end process;
+
+end architecture;

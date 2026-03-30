@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 25 23:34:51 2026" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="fm_demod_bd" PACKAGE="csga324" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fm_demod_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="67" NAME="fm_demodulated" RIGHT="0" SIGIS="data" SIGNAME="fm_demod_1_fm_demodulated">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fm_demod_1" PORT="fm_demodulated"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="32" NAME="i_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_i_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fm_demod_1" PORT="i_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="32" NAME="q_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_q_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fm_demod_1" PORT="q_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reg_en" SIGIS="data" SIGNAME="External_Ports_reg_en">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fm_demod_1" PORT="reg_en"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="405387267" FULLNAME="/fm_demod_1" HWVERSION="1.0" INSTANCE="fm_demod_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fm_demod" VLNV="User_Company:SysGen:fm_demod:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="c:/Users/fmabrouk/Documents/SysGen_FMdemod/ip/fm_demod.htm"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="fm_demod_bd_fm_demod_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="32" NAME="q_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_q_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="q_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="32" NAME="i_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_i_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reg_en" SIGIS="data" SIGNAME="External_Ports_reg_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reg_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="67" NAME="fm_demodulated" RIGHT="0" SIGIS="data" SIGNAME="fm_demod_1_fm_demodulated">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="fm_demodulated"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

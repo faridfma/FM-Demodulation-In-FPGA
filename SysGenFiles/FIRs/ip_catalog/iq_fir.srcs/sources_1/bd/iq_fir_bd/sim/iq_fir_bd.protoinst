@@ -1,0 +1,17 @@
+{
+	"version": "1.0",
+	"modules": {
+		"iq_fir_bd": {
+			"proto_instances": {
+				"/iq_fir_1/q_data": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TREADY": { "actual": "q_data_tready"},
+						"TVALID": { "actual": "q_data_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

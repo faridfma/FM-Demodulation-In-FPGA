@@ -1,0 +1,632 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 26 00:41:03 2026
+# Process ID: 36528
+# Current directory: C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1
+# Command line: vivado.exe -log iq_mixers_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source iq_mixers_0.tcl
+# Log file: C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1/iq_mixers_0.vds
+# Journal file: C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source iq_mixers_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/SysGen_FMdemod/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/SysGenFiles/FIRs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/SysGenFiles/Mixers/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivadonew2018/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.cache/ip 
+Command: synth_design -top iq_mixers_0 -part xc7s50csga324-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 474.117 ; gain = 105.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'iq_mixers_0' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/synth/iq_mixers_0.vhd:68]
+INFO: [Synth 8-3491] module 'iq_mixers' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers.vhd:154' bound to instance 'U0' of component 'iq_mixers' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/synth/iq_mixers_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'iq_mixers' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'iq_mixers_default_clock_driver' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 1 - type: integer 
+	Parameter log_2_period bound to: 1 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:212]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers_default_clock_driver' (4#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'iq_mixers_struct' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'xldds_compiler_84899b37c92f400832bdaa4d009e0a38' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:56]
+INFO: [Synth 8-3491] module 'iq_mixers_dds_compiler_v6_0_i0' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:59' bound to instance 'iq_mixers_dds_compiler_v6_0_i0_instance' of component 'iq_mixers_dds_compiler_v6_0_i0' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'iq_mixers_dds_compiler_v6_0_i0' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:68]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 25 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 1 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 0 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 2 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 1100110011001100110011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_17' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47292' bound to instance 'U0' of component 'dds_compiler_v6_0_17' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers_dds_compiler_v6_0_i0' (13#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/synth/iq_mixers_dds_compiler_v6_0_i0.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'xldds_compiler_84899b37c92f400832bdaa4d009e0a38' (14#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'xldds_compiler_8a3397b75fc272fecf56b1cadfdc9eb3' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:94]
+INFO: [Synth 8-3491] module 'iq_mixers_dds_compiler_v6_0_i1' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:59' bound to instance 'iq_mixers_dds_compiler_v6_0_i1_instance' of component 'iq_mixers_dds_compiler_v6_0_i1' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'iq_mixers_dds_compiler_v6_0_i1' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:68]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:71]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 25 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 0 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 1 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 2 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 1100110011001100110011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_17' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/hdl/dds_compiler_v6_0_vh_rfs.vhd:47292' bound to instance 'U0' of component 'dds_compiler_v6_0_17' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers_dds_compiler_v6_0_i1' (15#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i1/synth/iq_mixers_dds_compiler_v6_0_i1.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'xldds_compiler_8a3397b75fc272fecf56b1cadfdc9eb3' (16#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'iq_mixers_xlmult' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:205]
+	Parameter core_name0 bound to: iq_mixers_mult_gen_v12_0_i0 - type: string 
+	Parameter a_width bound to: 8 - type: integer 
+	Parameter a_bin_pt bound to: 6 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 8 - type: integer 
+	Parameter b_bin_pt bound to: 7 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 16 - type: integer 
+	Parameter p_bin_pt bound to: 14 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter extra_registers bound to: 1 - type: integer 
+	Parameter c_a_width bound to: 8 - type: integer 
+	Parameter c_b_width bound to: 8 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_pipelined bound to: 1 - type: integer 
+	Parameter c_baat bound to: 8 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'iq_mixers_mult_gen_v12_0_i0' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_mult_gen_v12_0_i0/synth/iq_mixers_mult_gen_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'iq_mixers_mult_gen_v12_0_i0' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'iq_mixers_mult_gen_v12_0_i0' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_mult_gen_v12_0_i0/synth/iq_mixers_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_mult_gen_v12_0_i0/synth/iq_mixers_mult_gen_v12_0_i0.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_mult_gen_v12_0_i0/synth/iq_mixers_mult_gen_v12_0_i0.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_A_WIDTH bound to: 8 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 15 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_dds_compiler_v6_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_mult_gen_v12_0_i0/synth/iq_mixers_mult_gen_v12_0_i0.vhd:127]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers_mult_gen_v12_0_i0' (22#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/iq_mixers_mult_gen_v12_0_i0/synth/iq_mixers_mult_gen_v12_0_i0.vhd:70]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg.vhd:20' bound to instance 'reg' of component 'synth_reg' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:31]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (23#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (24#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers_xlmult' (25#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers_entity_declarations.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers_struct' (26#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers' (27#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/xil_defaultlib/hdl/iq_mixers.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'iq_mixers_0' (28#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/synth/iq_mixers_0.vhd:68]
+WARNING: [Synth 8-3331] design synth_reg has unconnected port clr
+WARNING: [Synth 8-3331] design delay_line has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[47]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[46]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[45]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[44]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[43]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[42]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[41]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[40]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[39]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[38]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[37]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[36]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[35]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[34]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[33]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[32]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[31]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[30]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[29]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[28]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[27]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[26]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[25]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[24]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[23]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[22]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[21]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[20]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[19]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[18]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[17]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[16]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[15]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[14]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[13]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[12]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[11]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[10]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[9]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[8]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[7]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[6]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[5]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[4]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[3]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[2]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[1]
+WARNING: [Synth 8-3331] design dsp has unconnected port C_PORT[0]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[24]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[23]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[22]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[21]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[20]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[19]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[18]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[17]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[16]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[15]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[14]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[13]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[12]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[11]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[10]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[9]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[8]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[7]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[6]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[5]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[4]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[3]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[2]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[1]
+WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[0]
+WARNING: [Synth 8-3331] design dsp has unconnected port SUBTRACT
+WARNING: [Synth 8-3331] design dsp has unconnected port CARRY_IN
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[47]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[46]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[45]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[44]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[43]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[42]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[41]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[40]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[39]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[38]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[37]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[36]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[35]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[34]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[33]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[32]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[31]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[30]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[29]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[28]
+WARNING: [Synth 8-3331] design dsp has unconnected port PCASC_IN[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 608.371 ; gain = 239.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 608.371 ; gain = 239.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 608.371 ; gain = 239.539
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s50csga324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/constrs/iq_mixers.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/iq_mixers_0/constrs/iq_mixers.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 846.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDE => FDRE: 32 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 846.340 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 846.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 846.340 ; gain = 477.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 846.340 ; gain = 477.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1/dont_touch.xdc, line 18).
+Applied set_property DONT_TOUCH = true for U0/iq_mixers_struct/dds_compiler_6_0/iq_mixers_dds_compiler_v6_0_i0_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/iq_mixers_struct/dds_compiler_6_0_1/iq_mixers_dds_compiler_v6_0_i1_instance. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/iq_mixers_struct/mult1/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/iq_mixers_struct/mult2/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 846.340 ; gain = 477.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 846.340 ; gain = 477.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (iq_mixers_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module iq_mixers.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 846.340 ; gain = 477.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/iq_mixers_struct/dds_compiler_6_0/iq_mixers_dds_compiler_v6_0_i0_instance/U0/i_synth/i_0/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_double_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/iq_mixers_struct/dds_compiler_6_0_1/iq_mixers_dds_compiler_v6_0_i1_instance/U0/i_synth/i_0/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_double_table.i_block_rom.i_pipe_1.pre_asyn_cos_RAM_op_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 887.805 ; gain = 518.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 887.805 ; gain = 518.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    14|
+|2     |DSP48E1_1  |     2|
+|3     |LUT1       |    24|
+|4     |LUT2       |     6|
+|5     |LUT3       |    32|
+|6     |RAMB18E1_2 |     1|
+|7     |RAMB18E1_3 |     1|
+|8     |FDE        |    32|
+|9     |FDRE       |    66|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 901.227 ; gain = 294.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 901.227 ; gain = 532.395
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDE => FDRE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 901.227 ; gain = 544.289
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.227 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1/iq_mixers_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP iq_mixers_0, cache-ID = f902137f1d5c3316
+INFO: [Coretcl 2-1174] Renamed 42 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.227 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/iq_mixers_0_synth_1/iq_mixers_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file iq_mixers_0_utilization_synth.rpt -pb iq_mixers_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 26 00:42:03 2026...

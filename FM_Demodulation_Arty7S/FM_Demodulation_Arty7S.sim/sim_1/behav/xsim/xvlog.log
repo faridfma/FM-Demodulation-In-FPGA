@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

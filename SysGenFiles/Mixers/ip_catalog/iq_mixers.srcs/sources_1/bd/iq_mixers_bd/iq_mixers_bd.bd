@@ -1,0 +1,108 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2EE8C6955572A4AD",
+      "design_src": "SYSGEN",
+      "device": "xc7s50csga324-2",
+      "name": "iq_mixers_bd",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "iq_mixers_1": ""
+    },
+    "ports": {
+      "adc_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "iq_mixers_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "cos_mixer": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 14} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "sine_mixer": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 14} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "iq_mixers_1": {
+        "vlnv": "User_Company:SysGen:iq_mixers:1.0",
+        "xci_name": "iq_mixers_bd_iq_mixers_1_0"
+      }
+    },
+    "nets": {
+      "adc_in_1": {
+        "ports": [
+          "adc_in",
+          "iq_mixers_1/adc_in"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "iq_mixers_1/clk"
+        ]
+      },
+      "iq_mixers_1_cos_mixer": {
+        "ports": [
+          "iq_mixers_1/cos_mixer",
+          "cos_mixer"
+        ]
+      },
+      "iq_mixers_1_sine_mixer": {
+        "ports": [
+          "iq_mixers_1/sine_mixer",
+          "sine_mixer"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 26 00:30:04 2026" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="iq_mixers_bd" PACKAGE="csga324" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="7" NAME="adc_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_adc_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="iq_mixers_1" PORT="adc_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="iq_mixers_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="cos_mixer" RIGHT="0" SIGIS="data" SIGNAME="iq_mixers_1_cos_mixer">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="iq_mixers_1" PORT="cos_mixer"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="sine_mixer" RIGHT="0" SIGIS="data" SIGNAME="iq_mixers_1_sine_mixer">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="iq_mixers_1" PORT="sine_mixer"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="405390579" FULLNAME="/iq_mixers_1" HWVERSION="1.0" INSTANCE="iq_mixers_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="iq_mixers" VLNV="User_Company:SysGen:iq_mixers:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="c:/Users/fmabrouk/Documents/SysGen_FMdemod/Mixers/ip/iq_mixers.htm"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="iq_mixers_bd_iq_mixers_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="adc_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_adc_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="adc_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="sine_mixer" RIGHT="0" SIGIS="data" SIGNAME="iq_mixers_1_sine_mixer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sine_mixer"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="cos_mixer" RIGHT="0" SIGIS="data" SIGNAME="iq_mixers_1_cos_mixer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cos_mixer"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

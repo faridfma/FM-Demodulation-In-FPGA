@@ -1,0 +1,34 @@
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+-- Date        : Wed Mar 25 23:36:25 2026
+-- Host        : lvanoffice-208 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/fmabrouk/Documents/SysGen_FMdemod/ip_catalog/fm_demod.srcs/sources_1/bd/fm_demod_bd/ip/fm_demod_bd_fm_demod_1_0/fm_demod_bd_fm_demod_1_0_stub.vhdl
+-- Design      : fm_demod_bd_fm_demod_1_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7s50csga324-2
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity fm_demod_bd_fm_demod_1_0 is
+  Port ( 
+    q_in : in STD_LOGIC_VECTOR ( 32 downto 0 );
+    i_in : in STD_LOGIC_VECTOR ( 32 downto 0 );
+    reg_en : in STD_LOGIC;
+    clk : in STD_LOGIC;
+    fm_demodulated : out STD_LOGIC_VECTOR ( 67 downto 0 )
+  );
+
+end fm_demod_bd_fm_demod_1_0;
+
+architecture stub of fm_demod_bd_fm_demod_1_0 is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "q_in[32:0],i_in[32:0],reg_en,clk,fm_demodulated[67:0]";
+attribute x_core_info : string;
+attribute x_core_info of stub : architecture is "fm_demod,Vivado 2018.3";
+begin
+end;

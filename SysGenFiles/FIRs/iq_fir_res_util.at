@@ -1,0 +1,102 @@
+# Vivado resource utilization data is represented in anytable format
+# The data will be consumed by Resource Utilization flow in SysGen.
+
+{
+   'Design_Information' => [
+     { 
+        'PART' => 'xc7s50csga324-2',
+        'Vivado_Stage' => 'Post Synthesis',
+        'Top_Module' => 'iq_fir',
+        'HDL_Language' => 'vhdl',
+        'Netlist_Crossprobe_File' => 'iq_fir.vhd.at',
+     },
+   ],
+   'Device_Resources' => [
+     { 
+        'BRAMs' => '75',
+        'DSPs' => '120',
+        'Registers' => '65200',
+        'LUTs' => '32600',
+     },
+   ],
+   'Resource_Utilization_Data' => [
+     {
+          'File_Name' => 'iq_fir.vhd',
+          'Line_Num' => 'Line_58',
+          'Hier_Name' => 'iq_fir_bd_wrapper.iq_fir_bd_i.iq_fir_1.U0.iq_fir_struct.fir_compiler_7_2',
+          'Cell_Name' => 'iq_fir_bd_i/iq_fir_1/U0/iq_fir_struct/fir_compiler_7_2',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 166,
+                    'LUT4' => 15,
+                    'LUT2' => 17,
+                    'SRL16E' => 42,
+                    'DSP48E1' => 2,
+                    'RAMB18E1' => 2,
+                    'LUT5' => 23,
+                    'LUT3' => 15,
+                    'LUT6' => 15,
+                    'LUT1' => 5,
+                    'CARRY4' => 3,
+                    'FDSE' => 8,
+                    'Total_Registers' => 174,
+                    'Total_LUTs' => 132,
+                    'Total_DSPs' => 2,
+                    'Total_BRAMs' => 1.0,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iq_fir.vhd',
+          'Line_Num' => 'Line_70',
+          'Hier_Name' => 'iq_fir_bd_wrapper.iq_fir_bd_i.iq_fir_1.U0.iq_fir_struct.fir_compiler_7_2_1',
+          'Cell_Name' => 'iq_fir_bd_i/iq_fir_1/U0/iq_fir_struct/fir_compiler_7_2_1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 166,
+                    'LUT4' => 15,
+                    'LUT2' => 17,
+                    'SRL16E' => 42,
+                    'DSP48E1' => 2,
+                    'RAMB18E1' => 2,
+                    'LUT5' => 23,
+                    'LUT3' => 15,
+                    'LUT6' => 15,
+                    'LUT1' => 5,
+                    'CARRY4' => 3,
+                    'FDSE' => 8,
+                    'Total_Registers' => 174,
+                    'Total_LUTs' => 132,
+                    'Total_DSPs' => 2,
+                    'Total_BRAMs' => 1.0,
+               },
+          ], 
+     },
+     { 
+          'File_Name' => 'iq_fir.vhd',
+          'Line_Num' => 'Line_000',
+          'Hier_Name' => 'iq_fir',
+          'Cell_Name' => 'iq_fir',
+          'Primitives' => [ 
+               { 
+                    'FDRE' => 332,
+                    'LUT4' => 30,
+                    'LUT2' => 34,
+                    'SRL16E' => 84,
+                    'DSP48E1' => 4,
+                    'RAMB18E1' => 4,
+                    'LUT5' => 46,
+                    'LUT3' => 30,
+                    'LUT6' => 30,
+                    'LUT1' => 10,
+                    'CARRY4' => 6,
+                    'FDSE' => 16,
+                    'Total_Registers' => 348,
+                    'Total_LUTs' => 264,
+                    'Total_DSPs' => 4,
+                    'Total_BRAMs' => 2.0,
+               },
+          ],
+     },
+   ],
+} 

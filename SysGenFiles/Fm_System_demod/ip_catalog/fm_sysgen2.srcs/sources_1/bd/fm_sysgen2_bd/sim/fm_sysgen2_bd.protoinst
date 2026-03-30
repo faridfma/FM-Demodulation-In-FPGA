@@ -1,0 +1,17 @@
+{
+	"version": "1.0",
+	"modules": {
+		"fm_sysgen2_bd": {
+			"proto_instances": {
+				"/fm_sysgen2_1/q_data": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TREADY": { "actual": "q_data_tready"},
+						"TVALID": { "actual": "q_data_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}
