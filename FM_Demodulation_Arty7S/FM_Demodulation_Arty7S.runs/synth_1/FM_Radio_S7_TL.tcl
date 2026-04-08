@@ -47,16 +47,20 @@ read_vhdl -library xil_defaultlib {
 read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_1_2/c_addsub_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_1_2/c_addsub_1_ooc.xdc]
 
+read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1.xci
+set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1_ooc.xdc]
+
 read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_1_7/dds_compiler_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_1_7/dds_compiler_1_ooc.xdc]
+
+read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0_ooc.xdc]
 
 read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0_ooc.xdc]
-
-read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0_ooc.xdc]
 
 read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_5/mult_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_5/mult_gen_0_ooc.xdc]
@@ -73,10 +77,6 @@ set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Docu
 read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/constraints/fir_compiler_v7_2.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0_ooc.xdc]
-
-read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1.xci
-set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/constraints/fir_compiler_v7_2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1_ooc.xdc]
 
 read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0_15/ila_0.xci
 set_property used_in_synthesis false [get_files -all c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0_15/ila_v6_2/constraints/ila_impl.xdc]

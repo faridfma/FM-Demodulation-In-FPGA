@@ -317,10 +317,10 @@ end component;
 COMPONENT ila_0
 PORT (
     clk : IN STD_LOGIC;
-    probe0 : IN STD_LOGIC_VECTOR(31 DOWNTO 0); 
-    probe1 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-	probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-	probe3 : IN STD_LOGIC_VECTOR(11 DOWNTO 0)
+    probe0 : IN STD_LOGIC_VECTOR(11 DOWNTO 0) 
+--    probe1 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--	probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--	probe3 : IN STD_LOGIC_VECTOR(11 DOWNTO 0)
 );
 END COMPONENT;
 
@@ -406,13 +406,83 @@ ADC_data_input <= std_logic_vector(resize(shift_right(signed(FM_TestSignal),9), 
 MyILA : ila_0
 PORT MAP (
     clk    => clk200MHz,
-	probe0 => FMsignal_sys_scaled,   --QMixed_After_FIR( 31 downto 0), --FMsignal_sys_scaled, --FMsignal
-    probe1(0) => I_FIR_data_tvalid,  --FIR_Valid_in,
-	probe2(0) => I_FIR2_data_tvalid, --ADC_Data_Valid_Out
-    probe3 => Dac_Out_Sig --FMsignal_12Bits
+	probe0 => Dac_Out_Sig --FMsignal_sys_scaled,   --QMixed_After_FIR( 31 downto 0), --FMsignal_sys_scaled, --FMsignal
+--    probe1(0) => I_FIR_data_tvalid,  --FIR_Valid_in,
+--	probe2(0) => I_FIR2_data_tvalid, --ADC_Data_Valid_Out
+--    probe3 => Dac_Out_Sig --FMsignal_12Bits
 );
 
----------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+--FIR with Deccimation:
+--Fs= 10MHz; Fc= 200KHz, Fstop=900KHz; Attenuation= 80dB
+--Decimation: 5; output rate is: 2MHz
+------------------------------------------------------------------------------
+Q_FIR1 : fir_compiler_0
+  PORT MAP (
+    aclk               => clk200MHz,
+    s_axis_data_tvalid => FIR_Valid_in, --'1', --FIR_Valid_in,
+    s_axis_data_tready => Q_FIR_data_tready,
+    s_axis_data_tdata  => QMixedFMSignal, --FIR_Data_in, 
+    m_axis_data_tvalid => Q_FIR_data_tvalid,
+    m_axis_data_tdata  => QMixed_After_FIR --QDemodulatedSignal
+  );
+
+------------------------------------------------------------------------------
+--FIR with Deccimation:
+--Fs= 2MHz; Fc= 120KHz, Fstop=250KHz; Attenuation= 80dB
+--Decimation: 5; output rate is: 400 KHz
+------------------------------------------------------------------------------
+Q_FIR2: fir_compiler_1
+  PORT MAP (
+    aclk => clk200MHz,
+    s_axis_data_tvalid => Q_FIR_data_tvalid,
+    s_axis_data_tready => Q_FIR2_data_tready,
+    s_axis_data_tdata => QMixed_After_FIR,
+    m_axis_data_tvalid => Q_FIR2_data_tvalid,
+    m_axis_data_tdata => QMixed_After_FIR2
+  );
+ ------------------------------------------------------------------------------
+--FIR with Deccimation:
+--Fs= 10MHz; Fc= 200KHz, Fstop=900KHz; Attenuation= 80dB
+--Decimation: 5; output rate is: 2MHz
+------------------------------------------------------------------------------
+ I_FIR1 : fir_compiler_0
+  PORT MAP (
+    aclk => clk200MHz,
+    s_axis_data_tvalid => FIR_Valid_in, --'1', --FIR_Valid_in,
+    s_axis_data_tready => I_FIR_data_tready,
+    s_axis_data_tdata => IMixedFMSignal, --FIR_Data_in,  MixerSineSignal
+    m_axis_data_tvalid => I_FIR_data_tvalid,
+    m_axis_data_tdata => IMixed_After_FIR --IDemodulatedSigna
+  );
+
+------------------------------------------------------------------------------
+--FIR with Deccimation:
+--Fs= 2MHz; Fc= 120KHz, Fstop=250KHz; Attenuation= 80dB
+--Decimation: 5; output rate is: 400 KHz
+------------------------------------------------------------------------------
+ I_FIR2: fir_compiler_1
+  PORT MAP (
+    aclk => clk200MHz,
+    s_axis_data_tvalid => I_FIR_data_tvalid,
+    s_axis_data_tready => I_FIR2_data_tready,
+    s_axis_data_tdata => IMixed_After_FIR,
+    m_axis_data_tvalid => I_FIR2_data_tvalid,
+    m_axis_data_tdata => IMixed_After_FIR2
+  ); 
+  
+  
+--FMDemodul: FM_Demodulation
+--PORT MAP(
+--    clock         => clk200MHz,
+--    reset         => reset, 
+--    data_tvalid   => Q_FIR_data_tvalid, --Tvalidfortest, 
+--    In_data       => IMixed_After_FIR,  --I_FIRSig_ScaledDwn, 
+--    Qn_data       => QMixed_After_FIR,  --Q_FIRSig_ScaledDwn, 
+    
+--    DemodSignal   => FMsignal
+--  );
+ ---------------------------------------------------------------------------------
 -- This process creates a 5 ns pulse at a rate of of 400KHz for the DAC sampling 
 ---------------------------------------------------------------------------------
 process(clk200MHz, reset)
@@ -430,12 +500,11 @@ process(clk200MHz, reset)
             end if;
         end if;
     end process;
-
 ----------------------------------------------------------------
 --This Process implements a state machine that write to the DAC
 -- AD5445
 ----------------------------------------------------------------   
-process(clk200MHz,reset)
+process(clk10MHz,reset)
   variable sat : signed(11 downto 0);
 begin
   if(reset='1') then
@@ -447,25 +516,25 @@ begin
     
     state <= 0; 
     
-  elsif(rising_edge(clk200MHz)) then
+  elsif(rising_edge(clk10MHz)) then
     
     case state is
        when 0 =>
         if (DAC_in_pulse = '1')  then
-          ChipSeclect_n_sig  <= '0'; 
-          WriteEnable_IntSig   <='0';
+           ChipSeclect_n_sig  <= '0'; 
+           WriteEnable_IntSig   <='0';
           
-          -- scaled (still std_logic_vector)
-          FM_out_scaled <= FMsignal_12Bits; --FMsignal_sys_scaled(11 downto 0);
-
-          state <= 1; 
+           -- scaled (still std_logic_vector)
+           FM_out_scaled <= FMsignal_12Bits; --FMsignal_sys_scaled(11 downto 0);
+          
+           state <= 1; 
        end if; 
            
        when 1 =>
        
          --convert 12 bits signed to 12 bit unsigned. 
          Dac_Out_Sig <= std_logic_vector(unsigned(signed(FM_out_scaled) + to_signed(2048, 12))); 
-         
+         Dac_Out <= Dac_Out_Sig;
          --used for testing the DAC
          --Dac_Out_Sig<=std_logic_vector(resize(unsigned(ADC_Data_Out_IntSig), 12));
   
@@ -489,121 +558,18 @@ ChipSeclect_n<= ChipSeclect_n_sig;
 WriteEnable  <= WriteEnable_IntSig; 
 
 
-Dac_Out <= Dac_Out_Sig;
-
---FIR with Deccimation:
---Fs= 10MHz; Fc= 200KHz, Fstop=900KHz; Attenuation= 80dB
---Decimation: 5; output rate is: 2MHz
-Q_FIR1 : fir_compiler_0
-  PORT MAP (
-    aclk               => clk200MHz,
-    s_axis_data_tvalid => FIR_Valid_in, --'1', --FIR_Valid_in,
-    s_axis_data_tready => Q_FIR_data_tready,
-    s_axis_data_tdata  => QMixedFMSignal, --FIR_Data_in, 
-    m_axis_data_tvalid => Q_FIR_data_tvalid,
-    m_axis_data_tdata  => QMixed_After_FIR --QDemodulatedSignal
-  );
- 
-Q_FIR2: fir_compiler_1
-  PORT MAP (
-    aclk => clk200MHz,
-    s_axis_data_tvalid => Q_FIR_data_tvalid,
-    s_axis_data_tready => Q_FIR2_data_tready,
-    s_axis_data_tdata => QMixed_After_FIR,
-    m_axis_data_tvalid => Q_FIR2_data_tvalid,
-    m_axis_data_tdata => QMixed_After_FIR2
-  );
- 
- I_FIR : fir_compiler_0
-  PORT MAP (
-    aclk => clk200MHz,
-    s_axis_data_tvalid => FIR_Valid_in, --'1', --FIR_Valid_in,
-    s_axis_data_tready => I_FIR_data_tready,
-    s_axis_data_tdata => IMixedFMSignal, --FIR_Data_in,  MixerSineSignal
-    m_axis_data_tvalid => I_FIR_data_tvalid,
-    m_axis_data_tdata => IMixed_After_FIR --IDemodulatedSigna
-  );
- 
---FIR with Deccimation:
---Fs= 2MHz; Fc= 120KHz, Fstop=250KHz; Attenuation= 80dB
---Decimation: 5; output rate is: 400 KHz
- I_FIR2: fir_compiler_1
-  PORT MAP (
-    aclk => clk200MHz,
-    s_axis_data_tvalid => I_FIR_data_tvalid,
-    s_axis_data_tready => I_FIR2_data_tready,
-    s_axis_data_tdata => IMixed_After_FIR,
-    m_axis_data_tvalid => I_FIR2_data_tvalid,
-    m_axis_data_tdata => IMixed_After_FIR2
-  ); 
-  
-  
---FMDemodul: FM_Demodulation
---PORT MAP(
---    clock         => clk200MHz,
---    reset         => reset, 
---    data_tvalid   => Q_FIR_data_tvalid, --Tvalidfortest, 
---    In_data       => IMixed_After_FIR,  --I_FIRSig_ScaledDwn, 
---    Qn_data       => QMixed_After_FIR,  --Q_FIRSig_ScaledDwn, 
-    
---    DemodSignal   => FMsignal
---  );
- 
----------------------------------------------------------------------
-----create a process that generate a 5ns pulse for the FIR
----- This pulse will be generated based on the falling edge of DDS 
----- clock enable
----------------------------------------------------------------------  
---process(clk200MHz,reset)
-
---variable Cnt: integer range 0 to 50:= 0; 
-
---begin
-
---if(reset = '1') then
-
---FIR_Valid_in_Sig <='0';
---ADC_Data_Valid_Out_dly1 <= '0';
---ADC_Data_Valid_Out_dly2 <= '0';
-
---Cnt:=0;  
- 
---elsif(rising_edge(clk200MHz)) then
-   
---     ADC_Data_Valid_Out_dly1 <= ADC_Data_Valid_Out;
---     ADC_Data_Valid_Out_dly2 <= ADC_Data_Valid_Out_dly1;
-  
---  -- Detect falling edge of ADC_Data_Valid_Out
---    if (ADC_Data_Valid_Out_dly1 = '1' AND ADC_Data_Valid_Out_dly2= '0') then
---        --FIR_Valid_in_Sig  <= '1'; 
---        --FIR_Valid_in<= FIR_Valid_in_Sig;
---        Cnt:= Cnt+1;  
---   -- else
---       -- FIR_Valid_in_Sig  <= '0'; 
---        --FIR_Valid_in<= FIR_Valid_in_Sig; 
---    end if; 
-        
---    if(Cnt = 25) then   --sample at 400Khz
---      -- FIR_Valid_in_Sig <='1'; 
---       FIR_Valid_in<= '1'; --FIR_Valid_in_Sig;
---       Cnt:=0; 
---    else
---       --FIR_Valid_in_Sig <='0';
---       FIR_Valid_in<= '0'; --FIR_Valid_in_Sig;
---    end if; 
-
---end if;
- 
- 
---end process; 
-
-
+--Dac_Out <= Dac_Out_Sig;
+--Dac_Out <= std_logic_vector(shift_left(unsigned(Dac_Out_Sig), 2)(11 downto 0));
+----------------------------------------------------
+-- This proces is used to create a pulse at 10 MHz
+-- for sampling data for FIR1
+----------------------------------------------------
 process(clk200MHz)
 variable Cnt: integer range 0 to 19:= 0; 
 
 begin
   if rising_edge(clk200MHz) then
-    if cnt = 19 then --499 then
+    if cnt = 19 then 
       cnt := 0;
       FIR_Valid_in <= '1';
     else
@@ -613,26 +579,7 @@ begin
   end if;
 end process;
 
---I_FIRSig_ScaledDwn <= std_logic_vector(resize(shift_right(signed(IMixed_After_FIR),6),34)); 
---Q_FIRSig_ScaledDwn <= std_logic_vector(resize(shift_right(signed(QMixed_After_FIR),6),34));
-I_FIRSig_ScaledDwn <= IMixed_After_FIR(33 downto 0);
-Q_FIRSig_ScaledDwn <= QMixed_After_FIR(33 downto 0); 
 
-   process(clk200MHz, reset)
-    begin
-        if reset = '1' then
-            counter2 <= (others => '0');
-            clk400KHz <= '0';
-        elsif rising_edge(clk200Mhz) then
-            if counter2 = 249 then
-                counter2 <= (others => '0');
-                clk400KHz <= not clk400KHz;  -- toggle clock
-            else
-                counter2 <= counter2 + 1;
-            end if;
-        end if;
-    end process;
-    
 --IQ_Filters : iq_fir_0
 --  PORT MAP (
 --    in1 => QMixedFMSignal,
@@ -674,9 +621,7 @@ PORT MAP(
 --    q_data_tvalid => open,
 --    i_data_tready => open
 --  );
-  
---FMsignal_sys_scaled <= FMsignal_sys(31 downto 0);
---FMsignal_sys_scaled <= FMsignal_sys(31 downto 0);  
+   
 FMsignal_sys_scaled <= FMsignal;   
 FMsignal_12Bits <= std_logic_vector(resize(shift_right(signed(FMsignal),20),12)); --FMsignal(11 downto 0); 
 

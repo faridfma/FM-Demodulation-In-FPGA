@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Mar 30 12:20:32 2026
-# Process ID: 27316
+# Start of session at: Wed Apr  8 13:06:34 2026
+# Process ID: 47432
 # Current directory: C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1
 # Command line: vivado.exe -log FM_Radio_S7_TL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FM_Radio_S7_TL.tcl
 # Log file: C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/FM_Radio_S7_TL.vds
@@ -23,53 +23,50 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18796 
+INFO: Helper process launched with PID 39888 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 498.738 ; gain = 94.641
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 499.027 ; gain = 94.410
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'FM_Radio_S7_TL' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:19]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'Clk_Wizard' of component 'clk_wiz_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:325]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/clk_wiz_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/dds_compiler_0_stub.vhdl:5' bound to instance 'MixerSine' of component 'dds_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:337]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/dds_compiler_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/dds_compiler_1_stub.vhdl:5' bound to instance 'MixerCosine' of component 'dds_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:344]
-INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/dds_compiler_1_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'ADC1173_DSP' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/ADC_Interface.vhd:11' bound to instance 'ADC1173' of component 'ADC1173_DSP' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:351]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'Clk_Wizard' of component 'clk_wiz_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:331]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/dds_compiler_0_stub.vhdl:5' bound to instance 'MixerSine' of component 'dds_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/dds_compiler_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'dds_compiler_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/dds_compiler_1_stub.vhdl:5' bound to instance 'MixerCosine' of component 'dds_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:350]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/dds_compiler_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'ADC1173_DSP' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/ADC_Interface.vhd:11' bound to instance 'ADC1173' of component 'ADC1173_DSP' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:357]
 INFO: [Synth 8-638] synthesizing module 'ADC1173_DSP' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/ADC_Interface.vhd:23]
 WARNING: [Synth 8-6014] Unused sequential element Oldsample_counter_reg was removed.  [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/ADC_Interface.vhd:61]
 WARNING: [Synth 8-6014] Unused sequential element Newsample_counter_reg was removed.  [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/ADC_Interface.vhd:60]
 WARNING: [Synth 8-6014] Unused sequential element ADC_valid_pulse_dly3_reg was removed.  [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/ADC_Interface.vhd:112]
 INFO: [Synth 8-256] done synthesizing module 'ADC1173_DSP' (1#1) [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/ADC_Interface.vhd:23]
-INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'IMixer' of component 'mult_gen_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:364]
-INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/mult_gen_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'QMixer' of component 'mult_gen_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:373]
-INFO: [Synth 8-3491] module 'ila_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/ila_0_stub.vhdl:5' bound to instance 'MyILA' of component 'ila_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:400]
-INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/ila_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'Q_FIR1' of component 'fir_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:515]
-INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/fir_compiler_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/fir_compiler_1_stub.vhdl:5' bound to instance 'Q_FIR2' of component 'fir_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:525]
-INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/fir_compiler_1_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'I_FIR' of component 'fir_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:535]
-INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/fir_compiler_1_stub.vhdl:5' bound to instance 'I_FIR2' of component 'fir_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:545]
-INFO: [Synth 8-3491] module 'FM_Demodulation' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:11' bound to instance 'FMDemodul' of component 'FM_Demodulation' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:673]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'IMixer' of component 'mult_gen_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/mult_gen_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'QMixer' of component 'mult_gen_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:379]
+INFO: [Synth 8-3491] module 'ila_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/ila_0_stub.vhdl:5' bound to instance 'MyILA' of component 'ila_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:406]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/ila_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'Q_FIR1' of component 'fir_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:420]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/fir_compiler_1_stub.vhdl:5' bound to instance 'Q_FIR2' of component 'fir_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:435]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/fir_compiler_1_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'I_FIR1' of component 'fir_compiler_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:449]
+INFO: [Synth 8-3491] module 'fir_compiler_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/fir_compiler_1_stub.vhdl:5' bound to instance 'I_FIR2' of component 'fir_compiler_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:464]
+INFO: [Synth 8-3491] module 'FM_Demodulation' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:11' bound to instance 'FMDemodul' of component 'FM_Demodulation' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:605]
 INFO: [Synth 8-638] synthesizing module 'FM_Demodulation' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:25]
-INFO: [Synth 8-3491] module 'c_addsub_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/c_addsub_0_stub.vhdl:5' bound to instance 'Qn_Subtract_16Bits' of component 'c_addsub_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:127]
-INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/c_addsub_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'c_addsub_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/c_addsub_1_stub.vhdl:5' bound to instance 'In_Subtract_16Bit' of component 'c_addsub_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:135]
-INFO: [Synth 8-638] synthesizing module 'c_addsub_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/c_addsub_1_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'In_Multiplier' of component 'mult_gen_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/mult_gen_1_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'Qn_Multiplier' of component 'mult_gen_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:151]
-INFO: [Synth 8-3491] module 'c_addsub_2' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/c_addsub_2_stub.vhdl:5' bound to instance 'InQn_Subtuction' of component 'c_addsub_2' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:159]
-INFO: [Synth 8-638] synthesizing module 'c_addsub_2' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-27316-DVANOFFICE-071/realtime/c_addsub_2_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'c_addsub_0' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/c_addsub_0_stub.vhdl:5' bound to instance 'Qn_Subtract_16Bits' of component 'c_addsub_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/c_addsub_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'c_addsub_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/c_addsub_1_stub.vhdl:5' bound to instance 'In_Subtract_16Bit' of component 'c_addsub_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/c_addsub_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'In_Multiplier' of component 'mult_gen_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/mult_gen_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'Qn_Multiplier' of component 'mult_gen_1' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:151]
+INFO: [Synth 8-3491] module 'c_addsub_2' declared at 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/c_addsub_2_stub.vhdl:5' bound to instance 'InQn_Subtuction' of component 'c_addsub_2' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_2' [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/.Xil/Vivado-47432-DVANOFFICE-071/realtime/c_addsub_2_stub.vhdl:15]
 WARNING: [Synth 8-6014] Unused sequential element DemodSignalScaledDown_reg was removed.  [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:291]
 INFO: [Synth 8-256] done synthesizing module 'FM_Demodulation' (2#1) [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_Demodulation.vhd:25]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'FMDemodul'. This will prevent further optimization [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:673]
-WARNING: [Synth 8-6014] Unused sequential element counter2_reg was removed.  [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:639]
-WARNING: [Synth 8-6014] Unused sequential element clk400KHz_reg was removed.  [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:640]
 INFO: [Synth 8-256] done synthesizing module 'FM_Radio_S7_TL' (3#1) [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/VHDL/FM_ArtyS7_ToplLevel.vhd:19]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 554.168 ; gain = 150.070
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 554.578 ; gain = 149.961
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -82,10 +79,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 554.168 ; gain = 150.070
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 554.578 ; gain = 149.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 554.168 ; gain = 150.070
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 554.578 ; gain = 149.961
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7s50csga324-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -94,12 +91,16 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_1_2/c_addsub_1/c_addsub_0_in_context.xdc] for cell 'FMDemodul/In_Subtract_16Bit'
 Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_1_2/c_addsub_1/c_addsub_0_in_context.xdc] for cell 'FMDemodul/In_Subtract_16Bit'
+Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'Q_FIR2'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'Q_FIR2'
+Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'I_FIR2'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'I_FIR2'
 Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_1_7/dds_compiler_1/dds_compiler_1_in_context.xdc] for cell 'MixerCosine'
 Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_1_7/dds_compiler_1/dds_compiler_1_in_context.xdc] for cell 'MixerCosine'
-Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'Clk_Wizard'
-Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'Clk_Wizard'
 Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'MixerSine'
 Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'MixerSine'
+Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'Clk_Wizard'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'Clk_Wizard'
 Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_5/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'IMixer'
 Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_5/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'IMixer'
 Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_5/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'QMixer'
@@ -114,12 +115,8 @@ Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_adds
 Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_2_1/c_addsub_2/c_addsub_2_in_context.xdc] for cell 'FMDemodul/InQn_Subtuction'
 Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'Q_FIR1'
 Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'Q_FIR1'
-Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'I_FIR'
-Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'I_FIR'
-Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'Q_FIR2'
-Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'Q_FIR2'
-Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'I_FIR2'
-Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'I_FIR2'
+Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'I_FIR1'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0/fir_compiler_0_in_context.xdc] for cell 'I_FIR1'
 Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0_15/ila_0/ila_0_in_context.xdc] for cell 'MyILA'
 Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0_15/ila_0/ila_0_in_context.xdc] for cell 'MyILA'
 Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.srcs/constrs_1/imports/VHDL/ArtyS7_UCF.xdc]
@@ -128,17 +125,17 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/FM_Radio_S7_TL_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 885.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 884.562 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 885.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 884.562 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 885.055 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 885.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 884.562 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 884.562 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'IMixer' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'I_FIR' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'I_FIR1' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'I_FIR2' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'MyILA' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'QMixer' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
@@ -150,14 +147,14 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'FMDemodul/Qn_Multiplier' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'FMDemodul/Qn_Subtract_16Bits' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 885.055 ; gain = 480.957
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 884.562 ; gain = 479.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 885.055 ; gain = 480.957
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 884.562 ; gain = 479.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -165,22 +162,22 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for FMDemodul/In_Subtract_16Bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for I_FIR2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Q_FIR2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for MixerCosine. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for Clk_Wizard. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for MixerSine. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Clk_Wizard. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for IMixer. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for QMixer. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for FMDemodul/Qn_Subtract_16Bits. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for FMDemodul/In_Multiplier. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for FMDemodul/Qn_Multiplier. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for FMDemodul/InQn_Subtuction. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for I_FIR. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for I_FIR1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Q_FIR1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for I_FIR2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for Q_FIR2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for MyILA. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 885.055 ; gain = 480.957
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 884.562 ; gain = 479.945
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "clk10_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ISum_Sample" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -200,7 +197,7 @@ INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FM_Radio_S7_TL'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 885.055 ; gain = 480.957
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 884.562 ; gain = 479.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -221,7 +218,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               80 Bit    Registers := 5     
 	               40 Bit    Registers := 14    
-	               12 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 5     
 	                5 Bit    Registers := 1     
@@ -247,7 +244,7 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
-	               12 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 3     
 	                5 Bit    Registers := 1     
@@ -297,12 +294,12 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5544] ROM "QnTerm_InTerm_sig" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ADC1173/clk10_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FMDemodul/QnTerm_InTerm_sig" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "FIR_Valid_in" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "DAC_in_pulse" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 885.055 ; gain = 480.957
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 884.562 ; gain = 479.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -317,13 +314,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'Clk_Wizard/clk_out1' to p
 INFO: [Synth 8-5578] Moved timing constraint from pin 'Clk_Wizard/clk_out2' to pin 'Clk_Wizard/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 885.055 ; gain = 480.957
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 884.562 ; gain = 479.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 894.180 ; gain = 490.082
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 895.891 ; gain = 491.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -335,7 +332,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -359,7 +356,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -372,7 +369,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -384,25 +381,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -412,17 +409,17 @@ Report BlackBoxes:
 +------+---------------+----------+
 |      |BlackBox name  |Instances |
 +------+---------------+----------+
-|1     |c_addsub_0     |         1|
-|2     |c_addsub_1     |         1|
-|3     |mult_gen_1     |         2|
-|4     |c_addsub_2     |         1|
-|5     |clk_wiz_0      |         1|
-|6     |dds_compiler_0 |         1|
-|7     |dds_compiler_1 |         1|
-|8     |mult_gen_0     |         2|
-|9     |ila_0          |         1|
-|10    |fir_compiler_0 |         2|
-|11    |fir_compiler_1 |         2|
+|1     |clk_wiz_0      |         1|
+|2     |dds_compiler_0 |         1|
+|3     |dds_compiler_1 |         1|
+|4     |mult_gen_0     |         2|
+|5     |ila_0          |         1|
+|6     |fir_compiler_0 |         2|
+|7     |fir_compiler_1 |         2|
+|8     |c_addsub_0     |         1|
+|9     |c_addsub_1     |         1|
+|10    |mult_gen_1     |         2|
+|11    |c_addsub_2     |         1|
 +------+---------------+----------+
 
 Report Cell Usage: 
@@ -445,14 +442,14 @@ Report Cell Usage:
 |14    |mult_gen_1_bbox_16     |     1|
 |15    |mult_gen_1_bbox_17     |     1|
 |16    |LUT1                   |     6|
-|17    |LUT2                   |     6|
+|17    |LUT2                   |     7|
 |18    |LUT3                   |     4|
 |19    |LUT4                   |     8|
 |20    |LUT5                   |     7|
 |21    |LUT6                   |    18|
-|22    |FDCE                   |   738|
+|22    |FDCE                   |   718|
 |23    |FDPE                   |     3|
-|24    |FDRE                   |   276|
+|24    |FDRE                   |   288|
 |25    |IBUF                   |     9|
 |26    |OBUF                   |    15|
 +------+-----------------------+------+
@@ -461,32 +458,32 @@ Report Instance Areas:
 +------+------------+----------------+------+
 |      |Instance    |Module          |Cells |
 +------+------------+----------------+------+
-|1     |top         |                |  1663|
-|2     |  FMDemodul |FM_Demodulation |  1256|
-|3     |  ADC1173   |ADC1173_DSP     |    34|
+|1     |top         |                |  1656|
+|2     |  ADC1173   |ADC1173_DSP     |    34|
+|3     |  FMDemodul |FM_Demodulation |  1236|
 +------+------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 896.098 ; gain = 161.113
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 896.098 ; gain = 492.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 898.734 ; gain = 164.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 898.734 ; gain = 494.117
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 897.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.836 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-68 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+67 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 897.594 ; gain = 495.246
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 900.836 ; gain = 497.961
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 897.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.836 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/FM_Radio_S7_TL.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file FM_Radio_S7_TL_utilization_synth.rpt -pb FM_Radio_S7_TL_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 30 12:21:12 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 13:07:21 2026...

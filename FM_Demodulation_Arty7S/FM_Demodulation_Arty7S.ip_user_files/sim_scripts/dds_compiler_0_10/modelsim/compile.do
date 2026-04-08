@@ -27,6 +27,7 @@ vmap dds_compiler_v6_0_17 modelsim_lib/msim/dds_compiler_v6_0_17
 
 vlog -work xil_defaultlib -64 -incr -sv \
 "C:/Vivadonew2018/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Vivadonew2018/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93 \
 "C:/Vivadonew2018/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
@@ -60,7 +61,6 @@ vcom -work dds_compiler_v6_0_17 -64 -93 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/sim/dds_compiler_0.vhd" \
-
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -84,15 +84,15 @@ set rc [catch {
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.runs/synth_1/FM_Radio_S7_TL.dcp
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_1_2/c_addsub_1.xci
+  read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_1_7/dds_compiler_1.xci
-  read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0.xci
+  read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/clk_wiz_0_23/clk_wiz_0.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_5/mult_gen_0.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_0_11/c_addsub_0.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_1_2/mult_gen_1.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_2_1/c_addsub_2.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_4/fir_compiler_0.xci
-  read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1.xci
   read_ip -quiet C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0_15/ila_0.xci
   read_xdc C:/Users/fmabrouk/Documents/GitHub/FM_Demod_Artys/FM_Demodulation_Arty7S/FM_Demodulation_Arty7S.srcs/constrs_1/imports/VHDL/ArtyS7_UCF.xdc
   link_design -top FM_Radio_S7_TL -part xc7s50csga324-2

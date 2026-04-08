@@ -6,5 +6,11 @@
 # IP: C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/c_addsub_1_2/c_addsub_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==c_addsub_1 || ORIG_REF_NAME==c_addsub_1} -quiet] -quiet
 
+# IP: C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_1_1/fir_compiler_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fir_compiler_1 || ORIG_REF_NAME==fir_compiler_1} -quiet] -quiet
+
 # IP: C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_1_7/dds_compiler_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dds_compiler_1 || ORIG_REF_NAME==dds_compiler_1} -quiet] -quiet
+
+# IP: C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_10/dds_compiler_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dds_compiler_0 || ORIG_REF_NAME==dds_compiler_0} -quiet] -quiet
